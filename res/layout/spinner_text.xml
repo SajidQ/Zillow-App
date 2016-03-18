@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This layout file is used for setting up the custom spinner text -->
+
+    <TextView 
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:textColor="#FFFFFF"   
+	    android:textSize="32.0sp"
+        android:typeface="monospace"      
+	    android:padding="5dip"
+	    android:background="#A0808080"/>

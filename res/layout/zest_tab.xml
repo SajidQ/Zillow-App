@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout
+        android:id="@+id/linearLay1"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="700dp">
+        
+    	<TextSwitcher
+    	    android:id="@+id/textSwitcher"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:fontFamily="sans-serif"
+    	    android:gravity="center_horizontal"
+    	    android:text="switcher"
+    	    android:textColor="#000000"
+    	    android:textSize="42.0sp"
+    	    android:textStyle="bold"
+    	    android:typeface="monospace" />
+    	
+    	<TextView
+    	    android:id="@+id/prop_name"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_below="@+id/textSwitcher"
+    	    android:fontFamily="sans-serif"
+    	    android:gravity="center_horizontal"
+    	    android:paddingTop="10dp"
+    	    android:text=""
+    	    android:textColor="#000000"
+    	    android:textSize="18.0sp"
+    	    android:typeface="monospace" />
+    
+    	<ImageSwitcher
+    	android:layout_below="@+id/prop_name"
+   		android:id="@+id/my_imageSwitcher"
+   		android:layout_width="fill_parent"
+   		android:layout_height="400dp"
+   		android:layout_centerHorizontal="true"
+   		android:layout_centerVertical="true" 
+   		android:paddingTop="100dp">
+		</ImageSwitcher>
+		
+    	 <LinearLayout
+        android:id="@+id/linearLayInner1"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:paddingTop="50dp">
+        <Button
+    	    android:id="@+id/prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Previous Image" />
+    	     
+    	<Button
+    	android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Next Image" />
+    	
+    	
+    	</LinearLayout>
+	</LinearLayout>
+ 
+    	<LinearLayout
+        android:id="@+id/GridLayout3"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLay1"
+        android:layout_marginTop="50dp">
+     
+     	
+     	<TextView
+            android:id="@+id/zillow_footer"
+            android:layout_width="fill_parent"
+	        android:layout_weight="1"
+       		android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="18.0sp"
+            android:typeface="monospace"
+            android:gravity="center" />
+	</LinearLayout>
+ 
+</RelativeLayout>

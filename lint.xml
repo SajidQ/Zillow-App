@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="InlinedApi">
+        <ignore path="src/com/example/zillow_app/ResultsActivity.java" />
+    </issue>
+    <issue id="NewApi" severity="ignore">
+        <ignore path="src/com/example/zillow_app/BasicInfo.java" />
+        <ignore path="src/com/example/zillow_app/ResultsActivity.java" />
+    </issue>
+</lint>
